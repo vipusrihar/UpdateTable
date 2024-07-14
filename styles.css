@@ -1,0 +1,68 @@
+body{
+    font-size: 25px;
+    background-color: #f8bb6c;
+}
+h2,th,td{
+    text-align: center;
+}
+button{
+    min-width: 100px;
+    background-color: rgb(84, 41, 9);
+    color:white;
+    border-radius: 10%;
+    border: none;
+    padding: auto;
+}
+.popup{
+   display: none;
+   opacity: 0.99;
+   background-color: rgb(0, 0, 0);
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   position: fixed;
+   top:0;
+   left: 0;
+}
+.popupdetail{
+    background-color: rgb(159, 84, 14);
+    color: white;
+    width: 38%;
+    height: 42%;
+    position: relative;
+    top: 20%;
+    left:25%;
+    z-index: 2;
+    opacity: 1;
+    padding-top: 4%;
+    padding-left: 8%;
+    border-radius: 30px;
+}
+input{
+    height: 20px;
+}
+#add{
+    position:absolute;
+    left: 80%;
+    top:10%;
+}
+.tableview{
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#detailtable{
+    position:relative;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+}
+th{
+    min-width: 100px;
+}
+tr:nth-child(even){
+    background-color: #faebd7;
+}
+tr:nth-child(odd){
+    background-color:bisque;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Forms</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <h2 >Student Detail</h2>
+        <div class="popup">
+            <div class="popupdetail">
+                <form id="myform">
+                    <label for="stuname">Student Name : </label>
+                    <input id="stuname" placeholder="Student Name" type="text" required><br>
+
+                    <label for="stuage">Age : </label>
+                    <input id="stuage" placeholder="Student Age" type="number" required><br>
+
+                    <label for="stuaddress">Address : </label>
+                    <input id="stuaddress" placeholder="Address" type="text"><br>
+
+                    <label for="gender">Gender : </label>
+                    <input type="radio" value="Male" name="gender" id="gender">Male
+                    <input type="radio" value="Female" name="gender" >Female<br>
+
+                    <label for="course">Course : </label>
+                    <select >
+                        <option value="">Choose one</option>
+                        <option name ="course" value="C">C</option>
+                        <option name ="course" value="Web">Web</option>
+                        <option name ="course" value="Java">Java</option>
+                        <option name ="course" value="C#">C#</option>
+                        <option name ="course" value="Python">Python</option>
+                        <option name ="course" value="Kotlin">Kotlin</option>
+                    </select>
+                    <br>
+
+                    <label for="payment" >Payment : </label>
+                    <input type="checkbox" name="payment" value="Full" >Full
+                    <input type="checkbox" name="payment" value="Half">Half
+                    <input type="checkbox" name="payment" value="Scholrship">Scholrship<br>
+
+                    <button type="submit" id="submitbtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <button type="submit" id="add" >Add</button>
+        <div class="tableview">
+            <table id="detailtable">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Payment</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
